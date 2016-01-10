@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key = "preference_screen_key"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:title = "Preferences">
+
+
+
+    <PreferenceCategory
+        android:title = "User">
+        <EditTextPreference
+            android:key = "preference_user"
+            android:summary = "User Name"
+            android:title = "User Name"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title = "Application">
+
+        <Preference
+            android:key = "pref_rate"
+            android:summary = "Rate the app in the store"
+            android:title = "Rate the app"/>
+
+        <Preference
+            android:key = "pref_share"
+            android:summary = "Share the app with your friends"
+            android:title = "Share the app"/>
+
+        <com.raystone.ray.preferencehack.EmailDialog
+            android:key = "preference_send_email"
+            android:dialogIcon = "@mipmap/ic_launcher"
+            android:dialogTitle = "Send Feedback"
+            android:dialogMessage = "Do you want to send an email?"
+            android:negativeButtonText = "Cancel"
+            android:positiveButtonText = "OK"
+            android:summary = "Send your feedback by e-mail"
+            android:title = "Send Feedback"/>
+
+
+        <com.raystone.ray.preferencehack.AboutDialog
+            android:key = "pref_about_key"
+            android:dialogIcon = "@mipmap/ic_launcher"
+            android:dialogTitle = "About"
+            android:negativeButtonText = "@null"
+            android:title = "About"/>
+
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
